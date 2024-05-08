@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo list</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: whitesmoke;
+        }
+        .action-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .list-container{
+            background-color:rgb(66, 193, 232);
+            width: 35%;
+            height: 200px;
+            overflow-y: scroll;
+            display: block;
+            margin: 50px auto;
+            padding: 10px;
+            border-radius: 15px;}
+      
+    </style>
+</head>
+
+<body>
+    <div class="list-container" id="list-container">
+    </div>
+
+    <div class="action-container">
+        <input type="text" id="input-ToDo" class="input-ToDo">
+
+        <button onclick="add()" class="btn">
+            Add
+        </button>
+    </div>
+
+   
+</body>
+
+</html>
