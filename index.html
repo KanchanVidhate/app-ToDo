@@ -67,7 +67,7 @@
     </div>
     <script>
         let todoList = [];
-        const listFromLocalStorage = localStorage.getItem("todoList");
+        const listFromLocalStorage = localStorage.clear();
         if(listFromLocalStorage){
             todoList = JSON.parse(listFromLocalStorage);
             renderToDoList()
