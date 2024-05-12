@@ -75,7 +75,7 @@
 
 
         function add() {
-            const listFromLocalStorage = localStorage.getItem("todoList");
+            const inputElement = document.getElementById("input-ToDo");
             todoList.push(inputElement.value);
 
             localStorage.setItem("todoList",JSON.stringify(todoList));
